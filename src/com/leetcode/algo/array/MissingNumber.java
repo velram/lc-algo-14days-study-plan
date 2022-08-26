@@ -17,12 +17,12 @@ public class MissingNumber {
 class MissingNumberFinder {
     public int missingNumber(int[] nums) {
 
-        int natuarlNumbersSum = (nums.length) * (nums.length + 1) / 2;
-        int actualSum = 0;
+        int sumOfnNumbers = nums.length * (nums.length + 1) / 2;
 
         for(int loopIndex = 0; loopIndex < nums.length; loopIndex++){
-            actualSum += (nums[loopIndex]);
+            sumOfnNumbers -= nums[loopIndex];
         }
-        return natuarlNumbersSum - actualSum;
+
+        return sumOfnNumbers;
     }
 }

@@ -15,6 +15,7 @@ public class ArrayRotateDriver {
 
 class ArrayRotateTools {
     public void rotate(int[] nums, int k) {
+        k = k % nums.length;
     //Swap array elements from 0 to n
         reverseArray(nums, 0, nums.length-1);
     //Swap elements from 0 to k-1

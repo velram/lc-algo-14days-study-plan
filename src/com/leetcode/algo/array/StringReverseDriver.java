@@ -10,6 +10,11 @@ package com.leetcode.algo.array;
 public class StringReverseDriver {
     public static void main(String[] args) {
 
+        char[] input = {'a','b','c','d','e'};
+        StringReverseTools stringReverseTools = new StringReverseTools();
+        System.out.println("Input string : " + new String(input));
+        stringReverseTools.reverseString(input);
+        System.out.println("Reversed string : " + new String(input));
     }
 }
 
